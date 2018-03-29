@@ -1,11 +1,13 @@
 /*
 * Software Testing & Quality Assurance
-*
 * Purpose: Use Selenium library to automate web browser testing
 * Test
 *
+* Created by: Henry Huynh
+* Georgia Gwinnett College
 * */
 
+import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -62,5 +64,17 @@ public class SeleniumTesting {
        // Submits the form for testing
        confirmEmail.submit();
        System.out.println("Registration test complete!");
+   }
+
+   @AfterClass
+   public static void testConfirmationPage() {
+
+       WebElement address = driver.findElement(By.id("address1"));
+       if(address.getAttribute("value").isEmpty()) {
+           System.out.println("Sucessfully loaded membership creation page");
+       } else {
+           System.out.println("Error");
+       }
+
    }
 }
