@@ -1,10 +1,11 @@
 /*
 * Software Testing & Quality Assurance
 * Purpose: Use Selenium library to automate web browser testing
-* Test
+*
 *
 * Created by: Henry Huynh
 * Georgia Gwinnett College
+* 3/29/2018
 * */
 
 import org.junit.AfterClass;
