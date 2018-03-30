@@ -67,6 +67,7 @@ public class SeleniumTesting {
        System.out.println("Registration test complete!");
    }
 
+   // Tests the confirmation page
    @AfterClass
    public static void testConfirmationPage() {
 
