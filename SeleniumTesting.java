@@ -16,6 +16,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+// Declaring class name SeleniumTesting
 public class SeleniumTesting {
    public static WebDriver driver;
 
@@ -70,13 +71,11 @@ public class SeleniumTesting {
    // Tests the confirmation page
    @AfterClass
    public static void testConfirmationPage() {
-
        WebElement address = driver.findElement(By.id("address1"));
        if(address.getAttribute("value").isEmpty()) {
            System.out.println("Sucessfully loaded membership creation page");
        } else {
            System.out.println("Error");
        }
-
    }
 }
